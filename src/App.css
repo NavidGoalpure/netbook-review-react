@@ -1,3 +1,21 @@
+:root {
+  --primary-color: #2d3e49;
+  --secondari-color: #bfb9e8;
+  --accent-normal: #4dff3f;
+  --accent-dark: #39c471;
+  --text-dark: #212121;
+  /* blue-column-width */
+  --bcw: 5.933%;
+  /* white-column-width */
+  --wcw: 2.617%;
+  /* //////////////////////////*/
+  /* container-widths */
+  --desktop-container-width: 1146px;
+  --tablet-width: 980px;
+  --tablet-container-width: 738px;
+  --mobile-width: 375px;
+  --mobile-container-width: 300dpx;
+}
 .App {
   text-align: center;
 }
