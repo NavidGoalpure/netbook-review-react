@@ -39,6 +39,7 @@ h1,h2,h3,p{
 .logo{
   width:20%;
   object-fit: contain;
+  margin-left: 1.5rem;
 }
 .App-header{
   display:flex;
@@ -50,7 +51,7 @@ h1,h2,h3,p{
   display: flex;
   justify-content: space-between;
   height: 100%;
-  width: 40%;
+  width: 45%;
   margin: 0;
   align-items: center;
 }
@@ -76,7 +77,7 @@ width: 25%;
 .earning-button{
   background-color: var(--accent-normal);
   margin-left: 1rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
   text-decoration: none;
   color:white;
   font-weight: bold;
@@ -103,12 +104,12 @@ color:grey;
 }
 h1{
   margin-top: 5rem;
- 
 font-style: normal;
 font-weight: bold;
 font-size: 40px;
 line-height: 47px;
-text-align: center;
+text-align:center;
+
 }
 .start{
   color:var(--accent-dark);
@@ -151,16 +152,18 @@ color: #212121;
 .button-container{
   display:flex;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 .button{
-  width: 14.483%;
+  width: 13.483%;
   height: 3.312rem;
   background-color: var(--accent-color-light);
 border-radius: 50px;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-right: 1.875rem;
+margin-right: 2.617%;
+margin-top:2rem
 }
 .button-lable{
   font-size: 18px;
@@ -189,6 +192,7 @@ footer{
 .footer-image {
   object-fit: contain;
   align-self: center;
+  margin-left: 1.5rem;
 }
 .footer-titles{
   font-style: normal;
@@ -233,4 +237,47 @@ footer{
   position: absolute;
   right:15px;
   bottom: 17px;
+}
+@media only screen and (max-width:980px){
+  .desktop-container{
+    max-width: var(--tablet-container-width);
+  }
+  .button-lable{
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .titles{
+    font-size: 20px;
+    line-height: 23px;
+  }
+  h1{
+    font-size: 32px;
+    line-height: 37px;
+  }
+  br{
+    display:none
+  }
+  .footer-section{
+    flex-wrap: wrap;
+  }
+  .image-container{
+    width:100%;
+  }
+  #second-section{
+    width:100%;
+    
+  }
+  @media (max-width:375px){
+    .desktop-container{
+      max-width: var(--mobile-container-width);
+
+    }
+    .footer-titles{
+      display: none;
+    }
+    .button-lable{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }

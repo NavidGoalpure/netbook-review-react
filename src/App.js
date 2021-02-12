@@ -78,7 +78,9 @@ function App() {
     <footer>
     <div className="footer-content">
     <div className="footer-section">
+      <div className="image-container">
       <img src={footerLogo} className="footer-image" alt="footer logo"/>
+      </div>
       <div id="second-section">
         <a className="footer-titles" href="home">home</a>
         <a className="footer-titles" href="home">about</a>
