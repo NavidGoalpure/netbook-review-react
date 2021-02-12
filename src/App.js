@@ -1,9 +1,11 @@
 import logo from './page-logo.png';
 import './App.css';
 import reactDom from 'react-dom';
-import footerLogo from '/home/naruto/work/netbook-review-react/src/logo-footer.png'
-
-
+import footerLogo from '/home/naruto/work/netbook-review-react/src/logo-footer.png';
+import rectangle from '/home/naruto/work/netbook-review-react/src/Rectangle-18.png';
+import facebook from '/home/naruto/work/netbook-review-react/src/ic24-facebook.png';
+import UtubeBackground from '/home/naruto/work/netbook-review-react/src/Rectangle-19.png';
+import Utubelogo from '/home/naruto/work/netbook-review-react/src/youtube-1.png';
 function App() {
   return (
     <div className="container">
@@ -74,8 +76,26 @@ function App() {
   {/* <input type="range" min="1" max="100" value="50"/> */}
     </div>
     <footer>
-    
-      <img src={footerLogo} alt="footer logo"/>
+    <div className="footer-content">
+    <div className="footer-section">
+      <img src={footerLogo} className="footer-image" alt="footer logo"/>
+      <div id="second-section">
+        <a className="footer-titles" href="home">home</a>
+        <a className="footer-titles" href="home">about</a>
+        <a className="footer-titles" href="home">Reviews</a>
+        <div className="third-sec">
+        <div className="facebook-logo">
+        <img src={rectangle} alt="face-book-bacground" />
+        <img src={facebook} className="facebook" alt="face-book-logo"/>
+        </div>
+        <div className="Utube-logo">
+          <img src={UtubeBackground} alt="Utube background"/>
+          <img src={Utubelogo} className="Utube" alt="Utube logo"/>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
     </footer>
     </div>
   );

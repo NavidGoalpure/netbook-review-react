@@ -34,7 +34,7 @@ h1,h2,h3,p{
 .desktop-container {
   max-width: var(--desktop-container-width);
   width: 100%;
-  padding:21.687rem;
+  padding-bottom:21.687rem;
 }
 .logo{
   width:20%;
@@ -173,7 +173,64 @@ footer{
   position: absolute;
   bottom:0;
   left:0;
-  background-color: red;
+  background-color: var(--primary-color);
     width: 100vw;
     height: 21.687rem;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+  width:100%;
+  max-width: var(--desktop-container-width);
+  background-color: var(--primary-color);
+  display:flex;
+  position: relative;
+}
+.footer-image {
+  object-fit: contain;
+  align-self: center;
+}
+.footer-titles{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-right: 2.625rem;
+  text-decoration: none;
+  color: #ffff;
+  align-self: center;
+}
+.footer-section{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;  
+  margin-top: 4rem;
+}
+#second-section{
+  width: 50%;
+  display: flex;
+  text-align: center;
+  
+}
+.third-sec{
+  position: relative;
+  display: flex;
+}
+.facebook {
+  position: absolute;
+  left:14px;
+  bottom: 19px;
+}
+.Utube-logo{
+  margin-left: 1.9rem;
+  position: relative;
+}
+.Utube{
+  position: absolute;
+  right:15px;
+  bottom: 17px;
 }
