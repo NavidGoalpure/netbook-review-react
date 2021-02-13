@@ -256,7 +256,7 @@ span.logo_helper {
   width: 90%;
   visibility: visible;
   opacity: 1;
-  display: none;
+  display: block;
   z-index: 9999;
   border-top: 3px solid #2ea3f2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
