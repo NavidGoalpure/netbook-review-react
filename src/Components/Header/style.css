@@ -131,7 +131,7 @@ span.logo_helper {
   transition-property: all !important;
   /*  */
   font-size: 18px;
-  background-color: #66c572;
+  background-color: var(--accent-dark);
   border-color: rgba(255, 255, 255, 0);
   border-radius: 6px;
   font-weight: bold;
@@ -197,7 +197,7 @@ span.logo_helper {
   margin-top: 0px;
   font-size: inherit;
   font-weight: 600;
-  background-color: #4dff3f;
+  background-color: var(--accent-dark);
   color: white;
 }
 
@@ -253,7 +253,7 @@ span.logo_helper {
   left: 0;
   padding: 5%;
   background: #fff;
-  width: 100%;
+  width: 90%;
   visibility: visible;
   opacity: 1;
   display: none;
@@ -287,7 +287,7 @@ span.logo_helper {
   #top-menu {
     display: none;
   }
-  #et_top_search {
+  #top_search {
     margin: 0 35px 0 0;
     float: left;
   }
@@ -297,6 +297,7 @@ span.logo_helper {
   #top-navigation {
     padding-top: 24px;
     display: block;
+    margin-left: auto;
   }
   #logo,
   #main-header,

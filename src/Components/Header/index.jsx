@@ -51,7 +51,11 @@ const Header = () => {
             <div className="mobile_nav closed">
               <span className="select_page">Select Page</span>
               <span className="mobile_menu_bar mobile_menu_bar_toggle"></span>
-              <ul id="mobile_menu" className="mobile_menu">
+              <ul
+                id="mobile_menu"
+                className="mobile_menu"
+                style={{ display: "block" }}
+              >
                 <li>
                   <a href="https://netbooksreview.net/home3/">HOME</a>
                 </li>

@@ -35,7 +35,10 @@ ol,
 ul {
   list-style: none;
 }
-
+a,
+a:hover {
+  text-decoration: none;
+}
 .container {
   display: flex;
   align-items: flex-start;
