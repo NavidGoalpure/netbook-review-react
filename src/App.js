@@ -3,8 +3,8 @@ import Header from "./Components/Header";
 import footerLogo from "./Static/Images/logo-footer.png";
 import rectangle from "./Static/Images/Rectangle-18.png";
 import facebook from "./Static/Images/ic24-facebook.png";
-import UtubeBackground from "./Static/Images/Rectangle-19.png";
-import Utubelogo from "./Static/Images/youtube-1.png";
+import youtubeBackground from "./Static/Images/Rectangle-19.png";
+import youtubelogo from "./Static/Images/youtube-1.png";
 function App() {
   return (
     <div className="page-container">
@@ -83,30 +83,33 @@ function App() {
             </div>
             <div id="second-section">
               <a className="footer-titles" href="home">
-                home
+                Home
               </a>
               <a className="footer-titles" href="home">
-                about
+                About
               </a>
               <a className="footer-titles" href="home">
                 Reviews
               </a>
-              <div className="third-sec">
-                <div className="facebook-logo">
-                  <img src={rectangle} alt="face-book-bacground" />
-                  <img
-                    src={facebook}
-                    className="facebook"
-                    alt="face-book-logo"
-                  />
-                </div>
-                <div className="Utube-logo">
-                  <img src={UtubeBackground} alt="Utube background" />
-                  <img src={Utubelogo} className="Utube" alt="Utube logo" />
-                </div>
-              </div>
+            </div>
+            <div id="third-section">
+              <a
+                className="social-network "
+                id="facebook"
+                title="Follow on Facebook"
+                target="_blank"
+              ></a>
+              <a
+                className="social-network"
+                id="youtube"
+                title="Follow on Youtube"
+                target="_blank"
+              ></a>
             </div>
           </div>
+          <p id="copy-right">
+            Copyright 2021 NetbooksRewiew.net, All Right Reserved
+          </p>
         </div>
       </footer>
 
