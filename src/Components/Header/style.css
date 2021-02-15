@@ -248,7 +248,7 @@ span.logo_helper {
   top: 0;
   cursor: pointer;
   /*  */
-  color: #39c471;
+  color: var(--accent-dark);
 }
 .mobile_menu {
   position: absolute;
@@ -263,7 +263,7 @@ span.logo_helper {
   border-top: 3px solid #2ea3f2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /*  */
-  border-color: #39c471;
+  border-color: var(--accent-dark);
 }
 .mobile_menu li a {
   font-size: 14px;

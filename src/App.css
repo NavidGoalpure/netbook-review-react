@@ -108,7 +108,7 @@ h1 {
   width: 14.483%;
   min-width: 7.5rem;
   color: var(--text-dark);
-  border: 2px solid #39c471;
+  border: 2px solid var(--accent-dark);
   box-sizing: border-box;
   border-radius: 50px;
   height: 53px;
@@ -126,7 +126,7 @@ h1 {
 }
 .button {
   width: 13.483%;
-  min-width: 7.5rem;
+  min-width: 8.75rem;
   height: 3.312rem;
   background-color: var(--accent-color-light);
   border-radius: 50px;

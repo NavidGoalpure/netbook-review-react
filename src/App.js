@@ -1,10 +1,8 @@
 import "./App.css";
 import Header from "./Components/Header";
 import footerLogo from "./Static/Images/logo-footer.png";
-import rectangle from "./Static/Images/Rectangle-18.png";
-import facebook from "./Static/Images/ic24-facebook.png";
-import youtubeBackground from "./Static/Images/Rectangle-19.png";
-import youtubelogo from "./Static/Images/youtube-1.png";
+import RangeSlider from "./Components/RangeSlider";
+
 function App() {
   return (
     <div className="page-container">
@@ -66,9 +64,8 @@ function App() {
             <h3 className="button-lable">Flipping</h3>
           </div>
         </div>
-        <h2 className="titles" style={{ marginTop: "3.5rem" }}>
-          4. How much money you can invest?
-        </h2>
+
+        <RangeSlider />
       </div>
 
       <footer>

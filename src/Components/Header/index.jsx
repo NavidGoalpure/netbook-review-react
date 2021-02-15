@@ -64,7 +64,7 @@ const Header = () => {
                     ? {
                         maxHeight: "200px",
                         padding: "5%",
-                        borderTop: "3px solid #39c471",
+                        borderTop: "3px solid var(--accent-dark)",
                         transition: "max-height 0.2s ease-in",
                       }
                     : {
