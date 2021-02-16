@@ -65,7 +65,36 @@ function App() {
           </div>
         </div>
 
-        <RangeSlider />
+        <RangeSlider
+          title="4. How much money you can invest?"
+          defaultValue={5000}
+          step={1000}
+          min={0}
+          max={10000}
+          minLabel="$2000"
+          maxLabel="$50000"
+        />
+        <RangeSlider
+          title="5. How much time you can invest on a daily basis?"
+          defaultValue={4}
+          step={1}
+          min={1}
+          max={18}
+          minLabel="1hr"
+          maxLabel="18hr"
+        />
+        <RangeSlider
+          title="6. What's a good monthly income for you?"
+          defaultValue={25000}
+          step={1000}
+          min={2000}
+          max={50000}
+          minLabel="$2000"
+          maxLabel="$50000"
+        />
+        <div id="submit-container">
+          <div id="submit-button">SUBMIT</div>
+        </div>
       </div>
 
       <footer>

@@ -3,6 +3,7 @@ import logo from "../../Static/Images/netbook-full-logo.png";
 import "./style.css";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isInSearchMode, setIsInSearchMode] = useState(true);
   return (
     <header id="main-header">
       <div className="menu-container clearfix">
@@ -12,7 +13,10 @@ const Header = () => {
             <img id="logo" src={logo} alt="logo" />
           </a>
         </div>
-        <div id="top-navigation">
+        <div
+          id="top-navigation"
+          style={isInSearchMode ? { marginTop: "3.5rem" } : { marginTop: "0" }}
+        >
           <nav id="top-menu-nav">
             <ul id="top-menu" className="nav">
               <li className="menu-item">
@@ -92,6 +96,13 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="search-outer">
+        <div className="search_form_container">
+          <div className="search-form" role="search">
+            <input type="search" placeholder="Search..." />
           </div>
         </div>
       </div>

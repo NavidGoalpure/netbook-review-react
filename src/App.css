@@ -101,6 +101,7 @@ h1 {
   margin-right: 2.06rem;
 }
 .age {
+  -moz-appearance: textfield;
   /* background-color: black; */
   height: 5rem;
   align-self: center;
@@ -142,6 +143,28 @@ h1 {
   font-weight: normal;
   text-align: center;
   color: var(--text-dark);
+}
+#submit-container {
+  width: 14.48%;
+  height: 53px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+#submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-dark);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 footer {
   position: absolute;
