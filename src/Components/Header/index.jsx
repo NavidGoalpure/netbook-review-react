@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import logo from "../../Static/Images/netbook-full-logo.png";
+import useFindOutsideClick from "../../hooks/useFindOutsideClick";
 import "./style.css";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isInSearchMode, setIsInSearchMode] = useState(true);
+  const [isInSearchMode, setIsInSearchMode] = useState(false);
+  const wrapperRef = useRef(null);
+  useFindOutsideClick(wrapperRef, () => setIsInSearchMode(false));
+
   return (
     <header id="main-header">
       <div className="menu-container clearfix">
@@ -15,7 +19,11 @@ const Header = () => {
         </div>
         <div
           id="top-navigation"
-          style={isInSearchMode ? { marginTop: "3.5rem" } : { marginTop: "0" }}
+          style={
+            isInSearchMode
+              ? { marginTop: "9.5rem", opacity: "0" }
+              : { marginTop: "0", opacity: "1" }
+          }
         >
           <nav id="top-menu-nav">
             <ul id="top-menu" className="nav">
@@ -51,7 +59,10 @@ const Header = () => {
             </ul>
           </nav>
           <div id="top_search">
-            <span id="search_icon"></span>
+            <span
+              id="search_icon"
+              onClick={() => setIsInSearchMode(true)}
+            ></span>
           </div>
           <div
             id="mobile_nav_menu"
@@ -100,8 +111,15 @@ const Header = () => {
         </div>
       </div>
       <div className="search-outer">
-        <div className="search_form_container">
-          <div className="search-form" role="search">
+        <div
+          className="search_form_container"
+          style={
+            !isInSearchMode
+              ? { marginTop: "-100px", opacity: "0" }
+              : { marginTop: "0", opacity: "1" }
+          }
+        >
+          <div className="search-form" role="search" ref={wrapperRef}>
             <input type="search" placeholder="Search..." />
           </div>
         </div>
