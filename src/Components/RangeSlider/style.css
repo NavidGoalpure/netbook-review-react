@@ -66,9 +66,18 @@
   #slider-wrapper {
     margin: 0 8.5%;
   }
+  .slider-label-item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
 }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   #slider-wrapper {
     margin: 0;
+  }
+  .slider-label-item {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
