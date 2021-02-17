@@ -254,18 +254,17 @@ span.logo_helper {
   color: var(--accent-dark);
 }
 .mobile_menu {
-  position: absolute;
-  left: 0;
+  position: fixed;
+  left: 5%;
   padding: 5%;
   background: #fff;
-  width: 90%;
+  width: 80%;
   visibility: visible;
   opacity: 1;
   display: block;
   z-index: 9999;
   border-top: 3px solid #2ea3f2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /*  */
   border-color: var(--accent-dark);
 }
 .mobile_menu li a {
@@ -304,15 +303,7 @@ span.logo_helper {
     display: block;
     margin-left: auto;
   }
-  #logo,
-  #main-header,
-  .menu-container,
-  .logo_container {
-    transition: none;
-  }
-  #main-header {
-    position: absolute;
-  }
+
   #logo {
     max-width: 90%;
     object-fit: contain;
